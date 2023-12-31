@@ -1,0 +1,45 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .bulb {
+    width: 100px;
+    height: 160px;
+    background-color: yellow;
+    border-radius: 50% 50% 40% 40%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bulb::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bulb::after {
+    content: '';
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  
